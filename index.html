@@ -18,7 +18,7 @@
   h1 { font-size: 28px; line-height: 1.2; margin: 0; }
   h2 { font-size: 20px; margin: 0 0 8px; }
   h3 { font-size: 16px; margin: 20px 0 4px; }
-  nav { display: flex; gap: 8px; margin: 20px 0 8px; }
+  nav { display: flex; flex-wrap: wrap; gap: 8px; margin: 20px 0 8px; }
   nav a { color: var(--text); text-decoration: none; border: 1px solid var(--line); background: var(--card);
           padding: 6px 14px; border-radius: 999px; font-weight: 600; font-size: 14px; }
   section { background: var(--card); border: 1px solid var(--line); border-radius: 20px; padding: 20px; margin-top: 16px; }
@@ -27,6 +27,9 @@
   .summary { border-left: 3px solid var(--accent); padding-left: 12px; }
   .muted { color: var(--muted); font-size: 14px; }
   a { color: var(--accent); }
+  address { font-style: normal; }
+  .faq { list-style: none; padding-left: 0; }
+  .faq li { margin-top: 12px; }
   .tagline { margin: -6px 0 12px; letter-spacing: .12em; text-transform: uppercase; font-size: .85rem; opacity: .7; }
 </style>
 </head>
@@ -40,6 +43,8 @@
   <nav>
     <a href="#de">Deutsch</a>
     <a href="#en">English</a>
+    <a href="#support">Support</a>
+    <a href="#impressum">Impressum</a>
   </nav>
 
   <!-- ========================= DEUTSCH ========================= -->
@@ -48,7 +53,7 @@
     <p class="summary"><strong>Kurz gesagt:</strong> Alle Daten der App bleiben auf deinem iPhone. Es gibt kein Konto, keinen Server, keine Werbung und kein Tracking. Es werden keine Daten an den Entwickler oder an Dritte übertragen.</p>
 
     <h3>1. Verantwortlicher</h3>
-    <p>Lucas Waldmann<br>E-Mail: <a href="mailto:staxmo.app@gmail.com">staxmo.app@gmail.com</a></p>
+    <address>Lucas Waldmann<br>Frankensteiner Str. 58<br>49205 Hasbergen<br>Deutschland<br>E-Mail: <a href="mailto:staxmo.app@gmail.com">staxmo.app@gmail.com</a></address>
 
     <h3>2. Welche Daten die App verarbeitet</h3>
     <p>Trainings, Ausfalltage, Wochenstatus, Ernährung (Kalorien, Eiweiß), Gewicht, Schlaf, deine Wochenziele, den Fortschritt im Motivations-Feature VELQORA und deine Einstellungen (Darstellung, Sprache). Trainings, Gewicht und Schlaf sind Gesundheitsdaten und damit eine besondere Kategorie personenbezogener Daten nach Art. 9 DSGVO.</p>
@@ -85,7 +90,7 @@
     <p class="summary"><strong>In short:</strong> All of the app's data stays on your iPhone. There is no account, no server, no advertising and no tracking. No data is transferred to the developer or to third parties.</p>
 
     <h3>1. Controller</h3>
-    <p>Lucas Waldmann<br>Email: <a href="mailto:staxmo.app@gmail.com">staxmo.app@gmail.com</a></p>
+    <address>Lucas Waldmann<br>Frankensteiner Str. 58<br>49205 Hasbergen<br>Germany<br>Email: <a href="mailto:staxmo.app@gmail.com">staxmo.app@gmail.com</a></address>
 
     <h3>2. Data processed by the app</h3>
     <p>Workouts, days off, week status, nutrition (calories, protein), weight, sleep, your weekly goals, your progress in the motivation feature VELQORA and your settings (appearance, language). Workouts, weight and sleep are health data and therefore a special category of personal data under Art. 9 GDPR.</p>
@@ -114,6 +119,44 @@
     <h3>10. Changes</h3>
     <p>If the app changes, this policy will be updated. The version published here applies.</p>
     <p class="muted">Last updated: November 2026</p>
+  </section>
+
+  <!-- ========================= SUPPORT ========================= -->
+  <section id="support" lang="de">
+    <h2>Support</h2>
+    <p>Fragen, Probleme oder Ideen? Schreib an <a href="mailto:staxmo.app@gmail.com">staxmo.app@gmail.com</a> – ich melde mich in der Regel innerhalb von 48 Stunden.</p>
+    <h3>Häufige Fragen</h3>
+    <ul class="faq">
+      <li><strong>Wo sind meine Daten?</strong><br>Ausschließlich lokal auf deinem iPhone. Es gibt kein Konto und keinen Server.</li>
+      <li><strong>Wie sichere ich meine Daten?</strong><br>In der App unter Einstellungen → Daten / Sicherungen (JSON-Sicherung oder CSV).</li>
+      <li><strong>Was passiert, wenn ich die App lösche?</strong><br>Alle App-Daten werden vom Gerät entfernt. Erstelle vorher eine Sicherung.</li>
+      <li><strong>Wie entziehe ich den Zugriff auf Apple Health?</strong><br>Health-App → Profilbild → Apps → STAXMO.</li>
+    </ul>
+  </section>
+
+  <section id="support-en" lang="en">
+    <h2>Support</h2>
+    <p>Questions, problems or ideas? Write to <a href="mailto:staxmo.app@gmail.com">staxmo.app@gmail.com</a> – I usually reply within 48 hours.</p>
+    <h3>FAQ</h3>
+    <ul class="faq">
+      <li><strong>Where is my data stored?</strong><br>Only locally on your iPhone. There is no account and no server.</li>
+      <li><strong>How do I back up my data?</strong><br>In the app under Settings → Data / Backups (JSON backup or CSV).</li>
+      <li><strong>What happens if I delete the app?</strong><br>All app data is removed from the device. Create a backup first.</li>
+      <li><strong>How do I revoke Apple Health access?</strong><br>Health app → profile picture → Apps → STAXMO.</li>
+    </ul>
+  </section>
+
+  <!-- ========================= IMPRESSUM ========================= -->
+  <section id="impressum" lang="de">
+    <h2>Impressum</h2>
+    <p class="muted">Angaben gemäß § 5 DDG</p>
+    <address>Lucas Waldmann<br>Frankensteiner Str. 58<br>49205 Hasbergen<br>Deutschland<br>E-Mail: <a href="mailto:lw.lucas.waldmann@gmail.com">lw.lucas.waldmann@gmail.com</a><br>Telefon: <a href="tel:+491622714557">0162 2714557</a></address>
+  </section>
+
+  <section id="legal-notice" lang="en">
+    <h2>Legal Notice</h2>
+    <p class="muted">Information according to § 5 DDG (German Digital Services Act)</p>
+    <address>Lucas Waldmann<br>Frankensteiner Str. 58<br>49205 Hasbergen<br>Germany<br>Email: <a href="mailto:lw.lucas.waldmann@gmail.com">lw.lucas.waldmann@gmail.com</a><br>Phone: <a href="tel:+491622714557">+49 162 2714557</a></address>
   </section>
 </main>
 </body>
